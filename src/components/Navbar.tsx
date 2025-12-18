@@ -33,10 +33,7 @@ export function Navbar() {
           isScrolled ? "w-[65px] h-auto" : "w-[200px] h-auto"
         }`}
       />
-      <button className="absolute right-6 top-6 z-20 text-white lg:right-12 lg:top-12">
-        <Menu className="h-8 w-8" />
-        <span className="sr-only">Open menu</span>
-      </button>
+     
     </div>
   );
 }
