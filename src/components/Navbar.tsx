@@ -36,39 +36,60 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Logo - moves straight up */}
+      {/* Logo with text - moves straight up */}
       <div
         className={`fixed left-1/2 z-[9999] -translate-x-1/2 transition-all duration-500 ${
           isScrolled ? "top-2" : "top-[45%] -translate-y-1/2"
         }`}
       >
-        <div className={`relative transition-all duration-500 ${
-          isScrolled ? "w-[50px]" : "w-[200px]"
-        }`}>
-          {/* Original logo - fades out when scrolled */}
-          <Image
-            src="/hero.png"
-            alt="Company Logo"
-            width={200}
-            height={200}
-            className={`w-full h-auto transition-opacity duration-500 ${
-              isScrolled ? "opacity-0" : "opacity-100"
-            }`}
-          />
-          
-          {/* Colored logo - fades in when scrolled */}
-          <Image
-            src="/hero.png"
-            alt="Company Logo"
-            width={200}
-            height={200}
-            className={`absolute inset-0 w-full h-auto transition-opacity duration-500 ${
-              isScrolled ? "opacity-100" : "opacity-0"
-            }`}
-            style={{
-              filter: "brightness(0) saturate(100%) invert(42%) sepia(45%) saturate(632%) hue-rotate(338deg) brightness(92%) contrast(88%)"
-            }}
-          />
+        <div className="flex items-center gap-4">
+          {/* BESPOKE text - only visible when scrolled */}
+          {isScrolled && (
+            <span
+              className="font-serif tracking-widest text-[#A66242] text-sm transition-opacity duration-500"
+            >
+              BESPOKE
+            </span>
+          )}
+
+          {/* Logo */}
+          <div className={`relative transition-all duration-500 ${
+            isScrolled ? "w-[50px]" : "w-[200px]"
+          }`}>
+            {/* Original logo - fades out when scrolled */}
+            <Image
+              src="/hero.png"
+              alt="Company Logo"
+              width={200}
+              height={200}
+              className={`w-full h-auto transition-opacity duration-500 ${
+                isScrolled ? "opacity-0" : "opacity-100"
+              }`}
+            />
+            
+            {/* Colored logo - fades in when scrolled */}
+            <Image
+              src="/hero.png"
+              alt="Company Logo"
+              width={200}
+              height={200}
+              className={`absolute inset-0 w-full h-auto transition-opacity duration-500 ${
+                isScrolled ? "opacity-100" : "opacity-0"
+              }`}
+              style={{
+                filter: "brightness(0) saturate(100%) invert(42%) sepia(45%) saturate(632%) hue-rotate(338deg) brightness(92%) contrast(88%)"
+              }}
+            />
+          </div>
+
+          {/* TAILORS text - only visible when scrolled */}
+          {isScrolled && (
+            <span
+              className="font-serif tracking-widest text-[#A66242] text-sm transition-opacity duration-500"
+            >
+              TAILORS
+            </span>
+          )}
         </div>
       </div>
     </>
