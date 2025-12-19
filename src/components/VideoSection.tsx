@@ -1,6 +1,24 @@
+"use client";
+
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+
 export default function VideoSection(){
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"]
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
+  const opacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0, 1, 1, 0]);
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <motion.section 
+      ref={ref}
+      style={{ y, opacity }}
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white z-10"
+    >
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
@@ -29,7 +47,6 @@ export default function VideoSection(){
           Discover True Bespoke
         </button>
       </div>
-    </section>
+    </motion.section>
   );
-
 }

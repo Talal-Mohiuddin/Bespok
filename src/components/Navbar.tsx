@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { Menu } from "lucide-react";
+import { MobileNav } from "./Navcontent";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,16 +25,13 @@ export function Navbar() {
         }`}
       >
         <div className="relative flex items-center justify-center py-2">
-          <div className="h-[65px]" />
+          <div className="h-[50px]" />
           
           {/* Menu button inside navbar */}
           {isScrolled && (
-            <button 
-              className="absolute right-6 top-1/2 -translate-y-1/2 text-[#A66242] transition-opacity duration-500 lg:right-12"
-              aria-label="Open menu"
-            >
-              <Menu className="h-6 w-6" />
-            </button>
+            <div className="absolute right-6 top-1/2 -translate-y-1/2 lg:right-12">
+              <MobileNav iconColor="text-[#A66242]" />
+            </div>
           )}
         </div>
       </div>
@@ -42,11 +39,11 @@ export function Navbar() {
       {/* Logo - moves straight up */}
       <div
         className={`fixed left-1/2 z-[9999] -translate-x-1/2 transition-all duration-500 ${
-          isScrolled ? "top-3" : "top-[45%] -translate-y-1/2"
+          isScrolled ? "top-2" : "top-[45%] -translate-y-1/2"
         }`}
       >
         <div className={`relative transition-all duration-500 ${
-          isScrolled ? "w-[65px]" : "w-[200px]"
+          isScrolled ? "w-[50px]" : "w-[200px]"
         }`}>
           {/* Original logo - fades out when scrolled */}
           <Image
