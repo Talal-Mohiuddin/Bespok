@@ -25,7 +25,7 @@ export default function VideoSection(){
           deliver a perfect fit and timeless style.
         </p>
 
-        <button className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-300 shadow-lg hover:shadow-xl">
+        <button className="bg-[#A66242] hover:bg-[#532f26] text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-300 shadow-lg hover:shadow-xl">
           Discover True Bespoke
         </button>
       </div>
