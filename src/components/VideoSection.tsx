@@ -3,18 +3,18 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-export default function VideoSection(){
+export default function VideoSection() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "end start"]
+    offset: ["start end", "end start"],
   });
 
   const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
   const opacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0, 1, 1, 0]);
 
   return (
-    <motion.section 
+    <motion.section
       ref={ref}
       style={{ y, opacity }}
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white z-10"
@@ -43,9 +43,11 @@ export default function VideoSection(){
           deliver a perfect fit and timeless style.
         </p>
 
-        <button className="bg-[#A66242] hover:bg-[#532f26] text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-300 shadow-lg hover:shadow-xl">
-          Discover True Bespoke
-        </button>
+        <a href="/bespoke-suit">
+          <button className="bg-[#A66242] hover:bg-[#532f26] text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-300 shadow-lg hover:shadow-xl">
+            Discover True Bespoke
+          </button>
+        </a>
       </div>
     </motion.section>
   );

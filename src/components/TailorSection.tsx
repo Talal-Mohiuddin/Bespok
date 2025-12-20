@@ -23,7 +23,7 @@ export default function TailorSection() {
             </p>
 
             <a
-              href="#"
+              href="/bespoke-tailors-in-islamabad"
               className="mt-12 inline-flex items-center gap-3 font-serif text-[16px] text-[#A66242]"
             >
               <span>Explore More</span>

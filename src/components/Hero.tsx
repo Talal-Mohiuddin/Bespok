@@ -18,9 +18,9 @@ export function Hero() {
 
   return (
     <>
-      <section className="sticky top-0 h-screen w-full overflow-hidden -z-10">
+      <section className="sticky top-0 h-screen w-full overflow-hidden">
         {/* Hero Image */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 -z-10">
           <img
             src="/herobg.png"
             alt="Luxury bespoke tailoring"
@@ -45,18 +45,23 @@ export function Hero() {
               isScrolled ? "opacity-0 pointer-events-none" : "opacity-100"
             }`}
           >
-            <Button
-              size="lg"
-              className="bg-[#A66242] hover:bg-[#532f26] px-8 py-6 text-base font-medium text-white md:text-lg"
-            >
-              Discover Our Heritage
-            </Button>
-            <Button
-              size="lg"
-              className="bg-[#A66242] hover:bg-[#532f26] px-8 py-6 text-base font-medium text-white md:text-lg"
-            >
-              Book Your Appointment
-            </Button>
+            <a href="/heritage-timeline" className="w-full sm:w-auto">
+              <Button
+                size="lg"
+                className="w-full bg-[#A66242] hover:bg-[#532f26] px-8 py-6 text-base font-medium text-white md:text-lg"
+              >
+                Discover Our Heritage
+              </Button>
+            </a>
+
+            <a href="/book-your-appointment" className="w-full sm:w-auto">
+              <Button
+                size="lg"
+                className="w-full bg-[#A66242] hover:bg-[#532f26] px-8 py-6 text-base font-medium text-white md:text-lg"
+              >
+                Book Your Appointment
+              </Button>
+            </a>
           </div>
         </div>
       </section>

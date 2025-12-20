@@ -3,15 +3,15 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 
-type CardItem = { title: string; image: string };
+type CardItem = { title: string; image: string, link: string };
 
 export default function MensSuitsSection() {
   const items: CardItem[] = useMemo(
     () => [
-      { title: "Wedding Suits", image: "/tailorSection.jpg" },
-      { title: "Business Suits", image: "/tailorSection.jpg" },
-      { title: "Power Suits", image: "/tailorSection.jpg" },
-      { title: "Classic Suits", image: "/tailorSection.jpg" },
+      { title: "Wedding Suits", image: "/tailorSection.jpg", link: "/bespoke-wedding-suit" },
+      { title: "Business Suits", image: "/tailorSection.jpg", link: "/bespoke-business-suit" },
+      { title: "Power Suits", image: "/tailorSection.jpg", link: "/bespoke-power-suit" },
+      { title: "Classic Suits", image: "/tailorSection.jpg", link: "/bespoke-classic-suit" },
     ],
     []
   );
@@ -116,7 +116,7 @@ export default function MensSuitsSection() {
                       {item.title}
                     </h3>
                     <a
-                      href="#"
+                      href={item.link}
                       className="bg-[#A66242] hover:bg-[#532f26] inline-flex h-12 items-center justify-center rounded-md  px-10 font-serif text-base tracking-wider text-white transition-all hover:shadow-lg hover:shadow-[#A66242]/30 lg:h-14 lg:px-12 lg:text-lg"
                     >
                       Explore Now

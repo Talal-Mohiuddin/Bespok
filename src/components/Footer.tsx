@@ -30,31 +30,31 @@ export default function Footer() {
             </h3>
             <nav className="flex flex-col gap-3">
               <Link
-                href="#"
+                href="/bespoke-suit"
                 className="text-[#8B6B47] hover:underline underline-offset-4"
               >
                 Bespoke Suit
               </Link>
               <Link
-                href="#"
+                href="/bespoke-wedding-suit"
                 className="text-[#8B6B47] hover:underline underline-offset-4"
               >
                 Bespoke Wedding Suit
               </Link>
               <Link
-                href="#"
+                href="/bespoke-business-suit"
                 className="text-[#8B6B47] hover:underline underline-offset-4"
               >
                 Bespoke Business Suit
               </Link>
               <Link
-                href="#"
+                href="/bespoke-power-suit"
                 className="text-[#8B6B47] hover:underline underline-offset-4"
               >
                 Bespoke Power Suit
               </Link>
               <Link
-                href="#"
+                href="/bespoke-gala-suit"
                 className="text-[#8B6B47] hover:underline underline-offset-4"
               >
                 Bespoke Gala Suit
