@@ -10,7 +10,7 @@ export default function Contact() {
         <Navbar />
         <PageHero />
         <ReviewsSection />
-        <VideoTestimonials />
+        {/* <VideoTestimonials /> */}
         <Footer />
     </>
   )
