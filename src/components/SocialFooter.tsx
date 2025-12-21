@@ -1,21 +1,31 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function SocialFooter() {
   const [hoveredSocial, setHoveredSocial] = useState<string | null>(null);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const media = window.matchMedia("(min-width: 768px)");
+    setIsDesktop(media.matches);
+
+    const handler = (e: MediaQueryListEvent) => setIsDesktop(e.matches);
+    media.addEventListener("change", handler);
+    return () => media.removeEventListener("change", handler);
+  }, []);
 
   return (
-    <footer className="w-full">
+    <footer className="w-full min-h-[400px]">
       {/* Social Media Section */}
-      <div className="bg-black">
-        <div className="mx-auto w-full px-4 sm:px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-0 h-full">
+      <div className="bg-black min-h-[400px]">
+        <div className="mx-auto w-full h-full px-4 sm:px-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-0 min-h-[400px]">
             <Link
-              href="#"
-              className="flex items-center justify-center border-r border-b md:border-b-0 border-white transition-opacity py-12 sm:py-16 md:py-20 px-6 sm:px-8 md:px-12 min-h-[150px] sm:min-h-[180px] md:min-h-[200px] relative overflow-hidden"
-              onMouseEnter={() => setHoveredSocial("instagram")}
+              href="https://www.instagram.com/bespoketailorsislamabad/?hl=en"
+              className="flex items-center justify-center border-r border-b md:border-b-0 border-white transition-opacity px-6 sm:px-8 md:px-12 relative overflow-hidden"
+              onMouseEnter={() => isDesktop && setHoveredSocial("instagram")}
               onMouseLeave={() => setHoveredSocial(null)}
             >
               {hoveredSocial === "instagram" ? (
@@ -36,9 +46,9 @@ export function SocialFooter() {
               )}
             </Link>
             <Link
-              href="#"
-              className="flex items-center justify-center border-b md:border-b-0 md:border-r border-white transition-opacity py-12 sm:py-16 md:py-20 px-6 sm:px-8 md:px-12 min-h-[150px] sm:min-h-[180px] md:min-h-[200px] relative overflow-hidden"
-              onMouseEnter={() => setHoveredSocial("tiktok")}
+              href="https://www.tiktok.com/@bespoke.tailors"
+              className="flex items-center justify-center border-b md:border-b-0 md:border-r border-white transition-opacity px-6 sm:px-8 md:px-12 relative overflow-hidden"
+              onMouseEnter={() => isDesktop && setHoveredSocial("tiktok")}
               onMouseLeave={() => setHoveredSocial(null)}
             >
               {hoveredSocial === "tiktok" ? (
@@ -47,6 +57,7 @@ export function SocialFooter() {
                   alt="TikTok"
                   fill
                   className="object-cover opacity-100 animate-in fade-in zoom-in-95 duration-300"
+                  priority
                 />
               ) : (
                 <Image
@@ -59,9 +70,9 @@ export function SocialFooter() {
               )}
             </Link>
             <Link
-              href="#"
-              className="flex items-center justify-center border-r md:border-r border-white transition-opacity py-12 sm:py-16 md:py-20 px-6 sm:px-8 md:px-12 min-h-[150px] sm:min-h-[180px] md:min-h-[200px] relative overflow-hidden"
-              onMouseEnter={() => setHoveredSocial("facebook")}
+              href="https://www.facebook.com/BespokeTailors.ISB/"
+              className="flex items-center justify-center border-r md:border-r border-white transition-opacity px-6 sm:px-8 md:px-12 relative overflow-hidden"
+              onMouseEnter={() => isDesktop && setHoveredSocial("facebook")}
               onMouseLeave={() => setHoveredSocial(null)}
             >
               {hoveredSocial === "facebook" ? (
@@ -83,12 +94,14 @@ export function SocialFooter() {
             </Link>
             <Link
               href="#"
-              className="flex items-center justify-center transition-opacity py-12 sm:py-16 md:py-20 px-6 sm:px-8 md:px-12 min-h-[150px] sm:min-h-[180px] md:min-h-[200px] relative overflow-hidden"
-              onMouseEnter={() => setHoveredSocial("youtube")}
+              className="flex items-center justify-center transition-opacity px-6 sm:px-8 md:px-12 relative overflow-hidden"
+              onMouseEnter={() => isDesktop && setHoveredSocial("youtube")}
               onMouseLeave={() => setHoveredSocial(null)}
             >
               {hoveredSocial === "youtube" ? (
-                <span className="text-white text-lg sm:text-xl md:text-2xl font-bold animate-in fade-in zoom-in-95 duration-300">Follow Us</span>
+                <span className="text-white text-lg sm:text-xl md:text-2xl font-bold animate-in fade-in zoom-in-95 duration-300">
+                  Follow Us
+                </span>
               ) : (
                 <Image
                   src="/socials/youtube.png"
