@@ -25,7 +25,7 @@ export default function Navbar() {
         <div className="mx-auto max-w-[1400px] px-4 sm:px-6 md:px-10">
           <div className="relative flex h-[75px] sm:h-[75px] items-center">
             {/* Center logo */}
-            <div className="absolute left-1/2 -translate-x-1/2">
+            <a href="/" className="absolute left-1/2 -translate-x-1/2 cursor-pointer">
               <img
                 src="/hero.png"
                 alt="Bespoke"
@@ -36,7 +36,7 @@ export default function Navbar() {
                     "brightness(0) saturate(100%) invert(42%) sepia(45%) saturate(632%) hue-rotate(338deg) brightness(92%) contrast(88%)",
                 }}
               />
-            </div>
+            </a>
 
             {/* Right hamburger */}
             <div className="ml-auto">
@@ -61,7 +61,7 @@ export default function Navbar() {
         <div className="mx-auto max-w-[1400px] px-4 sm:px-6 md:px-10">
           <div className="relative flex h-[65px] sm:h-[75px] items-center">
             {/* Center logo with text when scrolled */}
-            <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-3">
+            <a href="/" className="absolute left-1/2 -translate-x-1/2 flex items-center gap-3 cursor-pointer">
               <span className="font-serif tracking-widest text-[#A66242] text-sm">
                 BESPOKE
               </span>
@@ -78,7 +78,7 @@ export default function Navbar() {
               <span className="font-serif tracking-widest text-[#A66242] text-sm">
                 TAILORS
               </span>
-            </div>
+            </a>
 
             {/* Right hamburger */}
             <div className="ml-auto">

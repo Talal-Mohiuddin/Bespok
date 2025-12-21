@@ -15,15 +15,15 @@ const teamMembers = [
   {
     name: "John Smith",
     role: "Head Tailor",
-    image: "/ceo.png",
-    objectPosition: "78% 30%",
+    image: "/ceo2.jpg",
+    objectPosition: "95% 30%",
     bio: "Expert craftsman with over 20 years of experience in bespoke tailoring. Specializes in custom suits and traditional techniques passed down through generations.",
   },
   {
     name: "Sarah Johnson",
     role: "Design Director",
-    image: "/ceo.png",
-    objectPosition: "78% 30%",
+    image: "/ceo3.jpg",
+    objectPosition: "85% 30%",
     bio: "Leading our design vision with a keen eye for detail and contemporary fashion. Creates unique patterns that blend classic elegance with modern style.",
   },
 ];

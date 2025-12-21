@@ -13,7 +13,7 @@ export default function ServicesSection() {
         {/* Cards */}
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-6">
           <ServiceCard
-            img="/tailorSection.jpg"
+            img="/customTailoring.jpg"
             crop="object-[15%_55%]"
             title="Custom Tailoring"
             desc={
@@ -28,7 +28,7 @@ export default function ServicesSection() {
           />
 
           <ServiceCard
-            img="/tailorSection.jpg"
+            img="/formalOcassional.jpg"
             crop="object-[50%_40%]"
             title="Formal &amp; Occasion Wear"
             desc={
@@ -43,8 +43,8 @@ export default function ServicesSection() {
           />
 
           <ServiceCard
-            img="/tailorSection.jpg"
-            crop="object-[85%_40%]"
+            img="/traditionalTailoring.jpg"
+            crop="object-[85%_40%] scale-225"
             title="Traditional &amp; Cultural Wear"
             desc={
               <>

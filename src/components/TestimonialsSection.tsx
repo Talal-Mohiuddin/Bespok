@@ -7,13 +7,13 @@ import { motion, AnimatePresence } from "framer-motion";
 const testimonials = [
   {
     name: "Muhammad Ali Hassnain",
-    image: "/tailorSection.jpg",
+    image: "/review1.png",
     review:
       "Very professional, had given my walima suit for stitching, gave me as many tries as I wanted, fixed and altered the suit as I had imagined. Their tailor master and shop manager Liaqat Bhai were really helpful and supportive all throughout.",
   },
   {
     name: "Nazar Waheed",
-    image: "/tailorSection.jpg",
+    image: "/review2.jpg",
     review:
       "Exceptional craftsmanship and attention to detail. The fit was perfect and the quality exceeded my expectations. Highly recommended!",
   },

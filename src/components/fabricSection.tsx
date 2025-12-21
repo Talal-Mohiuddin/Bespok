@@ -9,9 +9,9 @@ type FabricItem = {
 
 export default function FabricsSection() {
   const items: FabricItem[] = [
-    { image: "/tailorSection.jpg", alt: "Premium fabric 1" },
-    { image: "/tailorSection.jpg", alt: "Premium fabric 2" },
-    { image: "/tailorSection.jpg", alt: "Premium fabric 3" },
+    { image: "/fabric1.jpg", alt: "Premium fabric 1" },
+    { image: "/fabric2.jpg", alt: "Premium fabric 2" },
+    { image: "/fabric3.jpg", alt: "Premium fabric 3" },
   ];
 
   return (

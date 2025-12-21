@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { MobileNav } from "./Navcontent";
 
 export function Navbar() {
@@ -53,8 +54,8 @@ export function Navbar() {
           )}
 
           {/* Logo */}
-          <div className={`relative transition-all duration-500 ${
-            isScrolled ? "w-[50px]" : "w-[200px]"
+          <Link href="/" className={`relative transition-all duration-500 ${
+            isScrolled ? "w-[50px] cursor-pointer" : "w-[200px]"
           }`}>
             {/* Original logo - fades out when scrolled */}
             <Image
@@ -80,7 +81,7 @@ export function Navbar() {
                 filter: "brightness(0) saturate(100%) invert(42%) sepia(45%) saturate(632%) hue-rotate(338deg) brightness(92%) contrast(88%)"
               }}
             />
-          </div>
+          </Link>
 
           {/* TAILORS text - only visible when scrolled */}
           {isScrolled && (
