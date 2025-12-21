@@ -23,9 +23,9 @@ export default function Navbar() {
         <div className="h-px w-full bg-[#E9E9E9]" />
 
         <div className="mx-auto max-w-[1400px] px-4 sm:px-6 md:px-10">
-          <div className="relative flex h-[75px] sm:h-[75px] items-center">
+          <div className="flex h-[75px] sm:h-[75px] items-center justify-center relative">
             {/* Center logo */}
-            <a href="/" className="absolute left-1/2 -translate-x-1/2 cursor-pointer">
+            <a href="/" className="cursor-pointer">
               <img
                 src="/hero.png"
                 alt="Bespoke"
@@ -38,8 +38,8 @@ export default function Navbar() {
               />
             </a>
 
-            {/* Right hamburger */}
-            <div className="ml-auto">
+            {/* Right hamburger - absolute positioned */}
+            <div className="absolute right-0">
               <MobileNav iconColor="text-[#A66242]" />
             </div>
           </div>
@@ -59,9 +59,9 @@ export default function Navbar() {
         <div className="h-px w-full bg-[#E9E9E9]" />
 
         <div className="mx-auto max-w-[1400px] px-4 sm:px-6 md:px-10">
-          <div className="relative flex h-[65px] sm:h-[75px] items-center">
+          <div className="flex h-[65px] sm:h-[75px] items-center justify-center relative">
             {/* Center logo with text when scrolled */}
-            <a href="/" className="absolute left-1/2 -translate-x-1/2 flex items-center gap-3 cursor-pointer">
+            <a href="/" className="flex items-center gap-3 cursor-pointer">
               <span className="font-serif tracking-widest text-[#A66242] text-sm">
                 BESPOKE
               </span>
@@ -80,8 +80,8 @@ export default function Navbar() {
               </span>
             </a>
 
-            {/* Right hamburger */}
-            <div className="ml-auto">
+            {/* Right hamburger - absolute positioned */}
+            <div className="absolute right-0">
               <MobileNav iconColor="text-[#A66242]" />
             </div>
           </div>

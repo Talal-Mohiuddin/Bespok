@@ -65,15 +65,6 @@ export function Hero() {
           </div>
         </div>
       </section>
-
-      {/* Mobile Menu Button - outside the section with negative z-index */}
-      <div
-        className={`fixed right-6 top-6 z-[9999] transition-opacity duration-300 lg:right-12 lg:top-5 ${
-          isScrolled ? "opacity-0 pointer-events-none" : "opacity-100"
-        }`}
-      >
-        <MobileNav iconColor="text-white" />
-      </div>
     </>
   );
 }

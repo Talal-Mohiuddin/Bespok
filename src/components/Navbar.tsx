@@ -30,7 +30,7 @@ export function Navbar() {
           
           {/* Menu button inside navbar */}
           {isScrolled && (
-            <div className="absolute right-6 top-1/2 -translate-y-1/2 lg:right-12">
+            <div className="absolute right-4 top-1/2 -translate-y-1/2 lg:right-12">
               <MobileNav iconColor="text-[#A66242]" />
             </div>
           )}
@@ -93,6 +93,13 @@ export function Navbar() {
           )}
         </div>
       </div>
+
+      {/* Menu button - fixed at top right when not scrolled */}
+      {!isScrolled && (
+        <div className="fixed right-4 top-4 z-[9999] lg:right-12 lg:top-6">
+          <MobileNav iconColor="text-white" />
+        </div>
+      )}
     </>
   );
 }

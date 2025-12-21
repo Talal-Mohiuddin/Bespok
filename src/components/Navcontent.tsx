@@ -12,8 +12,8 @@ export function MobileNav({
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="h-20 w-20 hover:bg-transparent">
-          <div className="flex flex-col gap-2 w-8">
+        <Button variant="ghost" size="icon" className="h-10 w-10 hover:bg-transparent">
+          <div className="flex flex-col gap-1.5 w-5">
             <span className={`h-0.5 w-full ${iconColor} bg-current`} />
             <span className={`h-0.5 w-full ${iconColor} bg-current`} />
             <span className={`h-0.5 w-full ${iconColor} bg-current`} />
