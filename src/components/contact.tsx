@@ -15,7 +15,7 @@ export default function ContactSection() {
           <div className="order-2 w-full lg:order-1">
             <div className="overflow-hidden border border-black/10 bg-white">
               <img
-                src="/contact.webp"
+                src="/Contact.webp"
                 alt="Bespoke suit"
                 className="h-[520px] w-full object-cover object-center"
                 draggable={false}
