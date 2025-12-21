@@ -18,9 +18,13 @@ export default function Navbar() {
   return (
     <>
       {/* Static Navbar - visible at top of page */}
-      <header className={`w-full bg-white transition-opacity duration-300 ${isScrolled ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
+      <header
+        className={`w-full bg-white transition-opacity duration-300 ${
+          isScrolled ? "opacity-0 pointer-events-none" : "opacity-100"
+        }`}
+      >
         {/* thin top divider */}
-        <div className="h-px w-full bg-[#E9E9E9]" />
+        <div className="h-px w-full bg-[#a9aca7]" />
 
         <div className="mx-auto max-w-[1400px] px-4 sm:px-6 md:px-10">
           <div className="flex h-[75px] sm:h-[75px] items-center justify-center relative">
