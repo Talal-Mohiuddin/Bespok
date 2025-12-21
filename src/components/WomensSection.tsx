@@ -9,9 +9,9 @@ export default function MensSuitsSection() {
   const items: CardItem[] = useMemo(
     () => [
       { title: "Wedding Suits", image: "/wweddingSuit.png", link: "/bespoke-wedding-suit" },
-      { title: "Business Suits", image: "/wbusinessSuit.jpg", link: "/bespoke-business-suit" },
-      { title: "Power Suits", image: "/wpowerSuit.jpg", link: "/bespoke-power-suit" },
-      { title: "Classic Suits", image: "/wclassicSuit.jpg", link: "/bespoke-classic-suit" },
+      { title: "Business Suits", image: "/wbusinesssuit.jpg", link: "/bespoke-business-suit" },
+      { title: "Power Suits", image: "/wpowersuit.jpg", link: "/bespoke-power-suit" },
+      { title: "Classic Suits", image: "/wclassicsuit.jpg", link: "/bespoke-classic-suit" },
     ],
     []
   );
