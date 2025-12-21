@@ -11,7 +11,7 @@ export default function MensSuitsSection() {
       { title: "Wedding Suits", image: "/weddingSuit.jpg", link: "/bespoke-wedding-suit" },
       { title: "Business Suits", image: "/businessSuit.jpg", link: "/bespoke-business-suit" },
       { title: "Power Suits", image: "/powerSuit.jpg", link: "/bespoke-power-suit" },
-      { title: "Classic Suits", image: "/classicSuit.jpg", link: "/bespoke-classic-suit" },
+      { title: "Gala Suits", image: "/classicSuit.jpg", link: "/bespoke-gala-suit" },
     ],
     []
   );

@@ -10,7 +10,7 @@ export default function MensSuitsSection() {
     () => [
       { title: "Business Suits", image: "/wbusinesssuit.jpg", link: "/bespoke-business-suit" },
       { title: "Power Suits", image: "/wpowersuit.jpg", link: "/bespoke-power-suit" },
-      { title: "Classic Suits", image: "/wclassicsuit.jpg", link: "/bespoke-classic-suit" },
+      { title: "Gala Suits", image: "/wclassicsuit.jpg", link: "/bespoke-gala-suit" },
     ],
     []
   );
