@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Bespoke Tailors",
   description: "Bespoke Tailors - Handcrafted Elegance in Every Stitch",
+  icons: {
+    icon: "/hero.png",
+  },
 };
 
 export default function RootLayout({
