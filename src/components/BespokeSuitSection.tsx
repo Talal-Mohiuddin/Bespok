@@ -87,7 +87,7 @@ export default function BespokeSuitSection() {
             {/* Image Left with dotted border */}
             <div className="border-2 border-dashed border-gray-400 p-4">
               <img
-                src="https://bespoke.ae/wp-content/uploads/2025/09/What-are-Bespoke-Tailored-Suits.webp"
+                src="/works.png"
                 alt="Bespoke Suit Tailoring"
                 className="w-full h-auto min-h-[300px] md:min-h-[400px] lg:min-h-[450px] object-cover"
                 draggable={false}

@@ -47,8 +47,8 @@ export default function LegacySection() {
 
               <p>
                 The first shop is{" "}
-                <span className="font-semibold text-black">Parmar Tailors</span>,
-                a custom-made-to-measure tailoring shop with locations in{" "}
+                <span className="font-semibold text-black">Parmar Tailors</span>
+                , a custom-made-to-measure tailoring shop with locations in{" "}
                 <span className="font-semibold text-black">Bur Dubai</span> and{" "}
                 <span className="font-semibold text-black">
                   Jumeirah Lake Towers
@@ -64,9 +64,8 @@ export default function LegacySection() {
               <div className="relative overflow-hidden bg-white shadow-[0_6px_18px_rgba(0,0,0,0.18)]">
                 {/* Taller image, narrower width */}
                 <div className="relative h-[600px] sm:h-[700px] lg:h-[780px] w-full">
-
                   <Image
-                    src="/legacy.jpg"
+                    src="/legacy.png"
                     alt="Our Legacy"
                     fill
                     className="object-cover"

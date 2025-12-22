@@ -5,9 +5,9 @@ export default function BrandHero() {
     <section className="relative w-full overflow-hidden">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-top"
         style={{
-          backgroundImage: "url('/brand_background.jpg')",
+          backgroundImage: "url('/herobg.png')",
         }}
       />
 
@@ -16,7 +16,6 @@ export default function BrandHero() {
 
       {/* Content */}
       <div className="relative z-10 mx-auto flex min-h-[640px] max-w-[1400px] flex-col items-center justify-center px-6 text-center sm:min-h-[720px]">
-        
         {/* Eyebrow */}
         <p className="mb-3 font-serif text-[14px] tracking-wide text-white/80">
           Guided by Experts
