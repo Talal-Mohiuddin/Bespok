@@ -12,16 +12,16 @@ const testimonials = [
       "Very professional, had given my walima suit for stitching, gave me as many tries as I wanted, fixed and altered the suit as I had imagined. Their tailor master and shop manager Liaqat Bhai were really helpful and supportive all throughout.",
   },
   {
-    name: "Nazar Waheed",
-    image: "/review2.jpg",
-    review:
-      "Exceptional craftsmanship and attention to detail. The fit was perfect and the quality exceeded my expectations. Highly recommended!",
-  },
-  {
     name: "Ahmed Khan",
     image: "/review3.png",
     review:
       "Outstanding service from start to finish. The team was professional and the final product was exactly what I envisioned. Worth every penny!",
+  },
+  {
+    name: "Nazar Waheed",
+    image: "/review2.jpg",
+    review:
+      "Exceptional craftsmanship and attention to detail. The fit was perfect and the quality exceeded my expectations. Highly recommended!",
   },
 ];
 
@@ -31,16 +31,21 @@ export default function TestimonialsSection() {
 
   const handlePrevious = () => {
     setDirection(-1);
-    setCurrentIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+    setCurrentIndex((prev) =>
+      prev === 0 ? testimonials.length - 1 : prev - 1
+    );
   };
 
   const handleNext = () => {
     setDirection(1);
-    setCurrentIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
+    setCurrentIndex((prev) =>
+      prev === testimonials.length - 1 ? 0 : prev + 1
+    );
   };
 
   const currentTestimonial = testimonials[currentIndex];
-  const nextTestimonial = testimonials[(currentIndex + 1) % testimonials.length];
+  const nextTestimonial =
+    testimonials[(currentIndex + 1) % testimonials.length];
 
   const slideVariants = {
     enter: (direction: number) => ({
