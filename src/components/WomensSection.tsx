@@ -8,9 +8,17 @@ type CardItem = { title: string; image: string, link: string };
 export default function MensSuitsSection() {
   const items: CardItem[] = useMemo(
     () => [
-      { title: "Business Suits", image: "/wbusinesssuit.jpg", link: "/bespoke-business-suit" },
-      { title: "Power Suits", image: "/wpowersuit.jpg", link: "/bespoke-power-suit" },
-      { title: "Gala Suits", image: "/wclassicsuit.jpg", link: "/bespoke-gala-suit" },
+      {
+        title: "Business Suits",
+        image: "/wbusinesssuit.jpg",
+        link: "/bespoke-business-suit",
+      },
+      {
+        title: "Power Suits",
+        image: "/wpowersuit.jpg",
+        link: "/bespoke-power-suit",
+      },
+      { title: "Gala Suits", image: "/gall.jpg", link: "/bespoke-gala-suit" },
     ],
     []
   );
