@@ -13,13 +13,13 @@ const testimonials = [
   },
   {
     name: "Ahmed Khan",
-    image: "/review3.png",
+    image: "/review2.png",
     review:
       "Outstanding service from start to finish. The team was professional and the final product was exactly what I envisioned. Worth every penny!",
   },
   {
     name: "Nazar Waheed",
-    image: "/review2.jpg",
+    image: "/review3.png",
     review:
       "Exceptional craftsmanship and attention to detail. The fit was perfect and the quality exceeded my expectations. Highly recommended!",
   },
