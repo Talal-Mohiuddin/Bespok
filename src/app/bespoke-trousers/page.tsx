@@ -4,12 +4,12 @@ import BespokeTrouserSection from "@/components/BespokeTrouserSection";
 import Footer from "@/components/Footer";
 
 export default function BespokeTrousers() {
-    return (
-        <>
-            <Navbar />
-            <PageHero />
-            <BespokeTrouserSection />
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Navbar />
+      <PageHero />
+      <BespokeTrouserSection />
+      <Footer />
+    </>
+  );
 }

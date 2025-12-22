@@ -28,9 +28,7 @@ export default function CEOSection() {
               </h3>
 
               <p className="mt-6 max-w-[460px] font-serif text-[18px] leading-[1.6] text-white/80">
-                Lorem ipsum sed dictum enim tristique tristique sed consequat
-                risus tortor pellentesque sit vitae egestas penatibus dictum justo
-                elit quam nec ultrices posuere lectus dui.
+                Visionary leader with a passion for preserving traditional craftsmanship while embracing modern innovation in bespoke tailoring.
               </p>
 
               <p className="mt-10 font-serif text-[28px] text-white/80">CEO</p>

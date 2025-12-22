@@ -19,7 +19,7 @@ const testimonials = [
   },
   {
     name: "Ahmed Khan",
-    image: "/tailorSection.jpg",
+    image: "/review3.png",
     review:
       "Outstanding service from start to finish. The team was professional and the final product was exactly what I envisioned. Worth every penny!",
   },

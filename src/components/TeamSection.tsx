@@ -10,7 +10,7 @@ const teamMembers = [
     role: "CEO",
     image: "/ceo.png",
     objectPosition: "78% 30%",
-    bio: "Lorem ipsum sed dictum enim tristique tristique sed consequat risus tortor pellentesque sit vitae egestas penatibus dictum justo elit quam nec ultrices posuere lectus dui.",
+    bio: "Visionary leader with a passion for preserving traditional craftsmanship while embracing modern innovation in bespoke tailoring.",
   },
   {
     name: "John Smith",
