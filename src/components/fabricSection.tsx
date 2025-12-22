@@ -63,11 +63,11 @@ export default function FabricsSection() {
                         Start&apos;s From 5000 PKR / meter
                       </p>
 
-                      <Button
+                      {/* <Button
                         className="mt-4 h-[44px] w-[170px] rounded-md bg-[#A66242] font-serif text-[16px] text-white hover:bg-[#532f26]"
                       >
                         Explore Now
-                      </Button>
+                      </Button> */}
                     </div>
                   </div>
                 </div>
