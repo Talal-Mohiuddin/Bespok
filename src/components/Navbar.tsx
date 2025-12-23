@@ -30,7 +30,7 @@ export function Navbar() {
 
           {/* Menu button inside navbar */}
           {isScrolled && (
-            <div className="absolute right-4 top-1/2 -translate-y-1/2 lg:right-12">
+            <div className="absolute right-4 top-1/2 -translate-y-1/2 z-[10001] lg:right-12">
               <MobileNav iconColor="text-[#A66242]" />
             </div>
           )}
@@ -39,7 +39,7 @@ export function Navbar() {
 
       {/* Logo with text - moves straight up */}
       <div
-        className="fixed left-0 top-0 z-[9999] w-full transition-transform duration-500"
+        className="fixed left-0 top-0 z-[9999] w-full transition-transform duration-500 pointer-events-none"
         style={{
           transform: isScrolled ? "translate(0, 0.5rem)" : "translate(0, 30vh)",
         }}
@@ -57,7 +57,7 @@ export function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className={`relative transition-all duration-500 ${
+            className={`relative transition-all duration-500 pointer-events-auto ${
               isScrolled ? "w-[50px] cursor-pointer" : "w-[200px]"
             }`}
           >
@@ -101,7 +101,7 @@ export function Navbar() {
 
       {/* Menu button - fixed at top right when not scrolled */}
       {!isScrolled && (
-        <div className="fixed right-4 top-4 z-[9999] lg:right-12 lg:top-6">
+        <div className="fixed right-4 top-4 z-[10001] lg:right-12 lg:top-6">
           <MobileNav iconColor="text-white" />
         </div>
       )}
