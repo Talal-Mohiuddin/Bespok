@@ -33,7 +33,7 @@ export function Hero() {
         {/* Content Container */}
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-6">
           {/* Headline */}
-          <h1 className="mb-8 mt-[28rem] max-w-5xl text-center font-serif text-4xl leading-tight text-white drop-shadow-lg md:text-5xl lg:text-6xl xl:text-7xl">
+          <h1 className="mb-8 mt-[23rem] max-w-5xl text-center font-serif text-4xl leading-tight text-white drop-shadow-lg md:text-5xl lg:text-6xl xl:text-7xl">
             <span className="italic">
               A Heritage of Craft. A Future in True Bespoke.
             </span>
@@ -44,10 +44,6 @@ export function Hero() {
             className={`flex flex-col gap-4 sm:flex-row sm:gap-6 transition-opacity duration-300 ${
               isScrolled ? "opacity-0 pointer-events-none" : "opacity-100"
             }`}
-            style={{
-              willChange: "opacity",
-              WebkitTransition: "opacity 300ms ease-in-out",
-            }}
           >
             <a href="/heritage-timeline" className="w-full sm:w-auto">
               <Button
