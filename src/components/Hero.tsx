@@ -44,6 +44,10 @@ export function Hero() {
             className={`flex flex-col gap-4 sm:flex-row sm:gap-6 transition-opacity duration-300 ${
               isScrolled ? "opacity-0 pointer-events-none" : "opacity-100"
             }`}
+            style={{
+              willChange: "opacity",
+              WebkitTransition: "opacity 300ms ease-in-out",
+            }}
           >
             <a href="/heritage-timeline" className="w-full sm:w-auto">
               <Button

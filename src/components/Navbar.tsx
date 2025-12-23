@@ -24,6 +24,11 @@ export function Navbar() {
         className={`fixed left-0 right-0 top-0 z-[9998] bg-white/87 backdrop-blur-sm transition-transform duration-500 ${
           isScrolled ? "translate-y-0" : "-translate-y-full"
         }`}
+        style={{
+          WebkitBackdropFilter: "blur(8px)",
+          willChange: "transform",
+          transform: isScrolled ? "translateY(0)" : "translateY(-100%)",
+        }}
       >
         <div className="relative flex items-center justify-center py-2">
           <div className="h-[50px]" />
@@ -42,21 +47,27 @@ export function Navbar() {
         className={`fixed left-1/2 z-[9999] -translate-x-1/2 transition-all duration-500 ${
           isScrolled ? "top-2" : "top-[45%] -translate-y-1/2"
         }`}
+        style={{
+          willChange: "top, transform",
+        }}
       >
         <div className="flex items-center gap-4">
           {/* BESPOKE text - only visible when scrolled */}
-          {isScrolled && (
-            <span
-              className="font-serif tracking-widest text-[#A66242] text-sm transition-opacity duration-500"
-            >
-              BESPOKE
-            </span>
-          )}
+          <span
+            className={`font-serif tracking-widest text-[#A66242] text-sm transition-opacity duration-500 ${
+              isScrolled ? "opacity-100" : "opacity-0"
+            }`}
+            style={{ willChange: "opacity" }}
+          >
+            BESPOKE
+          </span>
 
           {/* Logo */}
           <Link href="/" className={`relative transition-all duration-500 ${
             isScrolled ? "w-[50px] cursor-pointer" : "w-[200px]"
-          }`}>
+          }`}
+          style={{ willChange: "width" }}
+          >
             {/* Original logo - fades out when scrolled */}
             <Image
               src="/hero.png"
@@ -66,6 +77,7 @@ export function Navbar() {
               className={`w-full h-auto transition-opacity duration-500 ${
                 isScrolled ? "opacity-0" : "opacity-100"
               }`}
+              style={{ willChange: "opacity" }}
             />
             
             {/* Colored logo - fades in when scrolled */}
@@ -78,19 +90,22 @@ export function Navbar() {
                 isScrolled ? "opacity-100" : "opacity-0"
               }`}
               style={{
-                filter: "brightness(0) saturate(100%) invert(42%) sepia(45%) saturate(632%) hue-rotate(338deg) brightness(92%) contrast(88%)"
+                filter: "brightness(0) saturate(100%) invert(42%) sepia(45%) saturate(632%) hue-rotate(338deg) brightness(92%) contrast(88%)",
+                WebkitFilter: "brightness(0) saturate(100%) invert(42%) sepia(45%) saturate(632%) hue-rotate(338deg) brightness(92%) contrast(88%)",
+                willChange: "opacity",
               }}
             />
           </Link>
 
           {/* TAILORS text - only visible when scrolled */}
-          {isScrolled && (
-            <span
-              className="font-serif tracking-widest text-[#A66242] text-sm transition-opacity duration-500"
-            >
-              TAILORS
-            </span>
-          )}
+          <span
+            className={`font-serif tracking-widest text-[#A66242] text-sm transition-opacity duration-500 ${
+              isScrolled ? "opacity-100" : "opacity-0"
+            }`}
+            style={{ willChange: "opacity" }}
+          >
+            TAILORS
+          </span>
         </div>
       </div>
 

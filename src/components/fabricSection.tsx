@@ -1,7 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-
 type FabricItem = {
   image: string;
   alt: string;

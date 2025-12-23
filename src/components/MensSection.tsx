@@ -99,7 +99,7 @@ export default function MensSuitsSection() {
               {items.map((item, index) => (
                 <div
                   key={`${item.title}-${index}`}
-                  className="group relative h-[650px] flex-shrink-0 overflow-hidden rounded-lg border-2 border-[#A66242] transition-all hover:border-[#C87952] hover:shadow-2xl hover:shadow-[#A66242]/20"
+                  className="group relative h-[650px] flex-shrink-0 overflow-hidden rounded-lg "
                   style={cardWidthStyle}
                 >
                   <img
