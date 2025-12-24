@@ -30,7 +30,7 @@ export default function Home() {
           <ServicesSection />
           <FabricsSection />
           <TestimonialsSection />
-          <TeamSection />
+          {/* <TeamSection /> */}
           <FAQsSection />
           <LocationSection />
           <SocialFooter />
