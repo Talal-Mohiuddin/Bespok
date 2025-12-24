@@ -7,7 +7,7 @@ export default function BrandHero() {
       <div
         className="absolute inset-0 bg-cover bg-top"
         style={{
-          backgroundImage: "url('/herobg.png')",
+          backgroundImage: "url('/herobg.jpeg')",
         }}
       />
 

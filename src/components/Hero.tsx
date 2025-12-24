@@ -22,9 +22,9 @@ export function Hero() {
         {/* Hero Image */}
         <div className="absolute inset-0 -z-10">
           <img
-            src="/herobg.png"
+            src="/herobg.jpeg"
             alt="Luxury bespoke tailoring"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-right md:object-center"
           />
           {/* Overlay for better text readability */}
           <div className="absolute inset-0 bg-black/20" />
