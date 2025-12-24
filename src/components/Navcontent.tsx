@@ -179,12 +179,12 @@ export function MobileNav({
           </a>
 
           {/* Testimonials */}
-          <a
+          {/* <a
             href="/testimonials"
             className="text-white font-serif text-xl mb-8 block"
           >
             Testimonials
-          </a>
+          </a> */}
 
           {/* FAQ */}
           <a href="/faq" className="text-white font-serif text-xl mb-8 block">
