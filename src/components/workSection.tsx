@@ -40,7 +40,7 @@ export default function WorkSection() {
               <a href="/how-bespoke-works">
                 <Button
                 size="lg"
-                className="bg-[#A66242] hover:bg-[#532f26] h-[56px] w-[260px] rounded-md  text-[18px] text-white shadow-xl transition-all hover:shadow-2xl hover:shadow-[#A66242]/30"
+                className="bg-[#A66242] hover:bg-[#532f26] h-[56px] w-[260px] rounded-md font-serif text-[18px] text-white shadow-xl transition-all hover:shadow-2xl hover:shadow-[#A66242]/30"
               >
                 Explore Now
               </Button>
