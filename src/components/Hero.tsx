@@ -41,7 +41,7 @@ export function Hero() {
 
           {/* Call-to-Action Buttons */}
           <div
-            className={`flex flex-col gap-4 sm:flex-row sm:gap-6 transition-opacity duration-300 ${
+            className={`flex flex-col font-serif gap-4 sm:flex-row sm:gap-6 transition-opacity duration-300 ${
               isScrolled ? "opacity-0 pointer-events-none" : "opacity-100"
             }`}
           >

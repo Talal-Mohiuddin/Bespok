@@ -123,3 +123,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.font-bbh {
+  font-family: var(--font-bbh), sans-serif;
+}
+
+.font-montecarlo {
+  font-family: var(--font-montecarlo), cursive;
+}

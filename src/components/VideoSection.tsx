@@ -31,12 +31,12 @@ export default function VideoSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-6 py-20 text-center">
-        <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white mb-8">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 py-20 text-center">
+        <h2 className="font-serif text-4xl  text-white mb-8">
           Why Bespoke Tailoring Matters
         </h2>
 
-        <p className="text-white/90 text-lg md:text-xl lg:text-2xl leading-relaxed mb-12 max-w-3xl mx-auto">
+        <p className="text-white/90 text-xl leading-relaxed mb-12 max-w-4xl mx-auto">
           At Bespoke Tailors, we believe clothing is more than fabric — it's a
           reflection of your personality, confidence, and taste. Every garment
           is hand-crafted, made to measure, and tailored with precision to
@@ -44,7 +44,7 @@ export default function VideoSection() {
         </p>
 
         <a href="/bespoke-suit">
-          <button className="bg-[#A66242] hover:bg-[#532f26] text-white px-8 py-4 rounded-lg text-lg font-medium transition-colors duration-300 shadow-lg hover:shadow-xl">
+          <button className="bg-[#A66242] hover:bg-[#532f26] text-white px-7 py-3 rounded-lg text-lg font-medium transition-colors duration-300 shadow-lg hover:shadow-xl font-serif">
             Discover True Bespoke
           </button>
         </a>

@@ -86,7 +86,9 @@ export default function MensSuitsSection() {
   return (
     <section className="bg-black">
       <div className="mx-auto max-w-[1400px] px-4 py-16 sm:px-6 lg:px-10">
-        <h2 className="mb-12 font-serif text-5xl text-white">Women&apos;s Suits</h2>
+        <h2 className="mb-12 font-serif text-5xl text-white">
+          Women&apos;s Suits
+        </h2>
 
         <div className="relative">
           <button
@@ -119,12 +121,12 @@ export default function MensSuitsSection() {
                   <div className="absolute inset-x-0 bottom-0 h-[50%] bg-gradient-to-t from-black via-black/80 to-transparent" />
 
                   <div className="absolute inset-x-0 bottom-0 flex flex-col items-center pb-8">
-                    <h3 className="mb-4 font-serif text-3xl text-white lg:text-4xl">
+                    <h3 className="mb-4 font-serif text-2xl text-white ">
                       {item.title}
                     </h3>
                     <a
                       href={item.link}
-                      className="bg-[#A66242] hover:bg-[#532f26] inline-flex h-12 items-center justify-center rounded-md  px-10 font-serif text-base tracking-wider text-white transition-all hover:shadow-lg hover:shadow-[#A66242]/30 lg:h-14 lg:px-12 lg:text-lg"
+                      className="bg-[#A66242] hover:bg-[#532f26] inline-flex h-11 items-center justify-center rounded-md  px-9 font-serif text-base tracking-wider text-white transition-all hover:shadow-lg hover:shadow-[#A66242]/30  lg:text-lg"
                     >
                       Explore Now
                     </a>

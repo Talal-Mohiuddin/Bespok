@@ -47,11 +47,11 @@ export function Navbar() {
         <div className="flex items-center justify-center gap-4">
           {/* BESPOKE text - only visible when scrolled */}
           <span
-            className={`font-serif tracking-widest text-[#A66242] text-sm transition-opacity duration-500 ${
+            className={`font-serif font-montecarlo  text-[#A66242]  tracking-[0.2em] transition-opacity duration-500 font-[1000] text-[24px] ${
               isScrolled ? "opacity-100" : "opacity-0"
             }`}
           >
-            BESPOKE
+            Bespoke
           </span>
 
           {/* Logo */}
@@ -90,11 +90,11 @@ export function Navbar() {
 
           {/* TAILORS text - only visible when scrolled */}
           <span
-            className={`font-serif tracking-widest text-[#A66242] text-sm transition-opacity duration-500 ${
+            className={`font-serif  font-montecarlo text-[#A66242]  tracking-[0.2em] font-[1000] text-[24px]  transition-opacity duration-500 ${
               isScrolled ? "opacity-100" : "opacity-0"
             }`}
           >
-            TAILORS
+            Tailors
           </span>
         </div>
       </div>

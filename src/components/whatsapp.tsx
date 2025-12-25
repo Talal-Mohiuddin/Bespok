@@ -5,7 +5,7 @@ import React from 'react';
 import Image from 'next/image';
 
 export default function WhatsAppButton() {
-  const phoneNumber = '925123422222'; // Format: country code + number (no spaces or special chars)
+  const phoneNumber = "+923341544232"; // Format: country code + number (no spaces or special chars)
   const message = 'Hello! I would like to get in touch.'; // Optional pre-filled message
   
   const handleClick = () => {
