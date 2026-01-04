@@ -14,12 +14,13 @@ import { FAQsSection } from "@/components/FaqSection";
 import { LocationSection } from "@/components/LocationSection";
 import { SocialFooter } from "@/components/SocialFooter";
 import Footer from "@/components/Footer";
+import MaintenancePage from "@/components/MaintenancePage";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <div className="relative">
+      {/* <Navbar /> */}
+      {/* <div className="relative">
         <Hero />
         <div className="relative z-10">
           <VideoSection />
@@ -30,13 +31,14 @@ export default function Home() {
           <ServicesSection />
           <FabricsSection />
           <TestimonialsSection />
-          {/* <TeamSection /> */}
+
           <FAQsSection />
           <LocationSection />
           <SocialFooter />
           <Footer />
         </div>
-      </div>
+      </div> */}
+      <MaintenancePage />
     </>
   );
 }
